@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Nunito+Sans:wght@800&family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: 'Karla', sans-serif;
+    color:#004134;
+}
+.container{
+    position: relative;
+}
+textarea{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.keyboard{
+    background-color: #004134;
+    position: fixed;
+    bottom: -100%;
+    width:100vw;
+    padding: 5px 0;
+    max-height: 300px;
+    transition-property: bottom;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.keyboard_keys{
+    text-align: center;
+    
+}
+.keyboard_key{
+    background-color:rgba(255, 255, 255, 0.2);
+    height: 45px;
+    width: 6%;
+    min-width: 20px;
+    margin:2px;
+    border-radius: 5px;
+    border: none;
+    color:white;
+    font-size: 100%;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    vertical-align: top;
+}
+.keyboard_key_wide{
+    width: 12%;
+}
+.keyboard_key_ultrawide{
+    width: 36%;
+}
+i{
+    z-index: -1;
+}
